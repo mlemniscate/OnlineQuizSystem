@@ -15,23 +15,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Facade", "Facade", "{7F909A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C78DB740-AD32-4F7F-95C1-461B6F368CA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz.Domain", "WriteModel\QuizContext\Domain\Quiz.Domain\Quiz.Domain.csproj", "{D6AE260B-4077-4C90-8AE7-F257F848BDEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quiz.Domain", "WriteModel\QuizContext\Domain\Quiz.Domain\Quiz.Domain.csproj", "{D6AE260B-4077-4C90-8AE7-F257F848BDEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz.Application", "WriteModel\QuizContext\Application\Quiz.Application\Quiz.Application.csproj", "{5EEA4975-15CB-4109-91E7-2071BA43B868}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quiz.Application", "WriteModel\QuizContext\Application\Quiz.Application\Quiz.Application.csproj", "{5EEA4975-15CB-4109-91E7-2071BA43B868}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz.Application.Contracts", "WriteModel\QuizContext\Application\Quiz.Application.Contracts\Quiz.Application.Contracts.csproj", "{0D953788-3080-484E-AFAA-2AD8061FA7E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quiz.Application.Contracts", "WriteModel\QuizContext\Application\Quiz.Application.Contracts\Quiz.Application.Contracts.csproj", "{0D953788-3080-484E-AFAA-2AD8061FA7E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz.Facade", "WriteModel\QuizContext\Facade\Quiz.Facade\Quiz.Facade.csproj", "{0E89D72D-D90F-4E21-91F0-700147362DED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quiz.Facade", "WriteModel\QuizContext\Facade\Quiz.Facade\Quiz.Facade.csproj", "{0E89D72D-D90F-4E21-91F0-700147362DED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz.Facade.Contracts", "WriteModel\QuizContext\Facade\Quiz.Facade.Contracts\Quiz.Facade.Contracts.csproj", "{20B0A331-7FD1-44D9-A3E1-FC5F54F8E8D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quiz.Facade.Contracts", "WriteModel\QuizContext\Facade\Quiz.Facade.Contracts\Quiz.Facade.Contracts.csproj", "{20B0A331-7FD1-44D9-A3E1-FC5F54F8E8D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz.Infrastructure", "WriteModel\QuizContext\Infrastructure\Quiz.Infrastructure\Quiz.Infrastructure.csproj", "{EFBB79CC-67ED-4188-A169-9A03D733242A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quiz.Infrastructure", "WriteModel\QuizContext\Infrastructure\Quiz.Infrastructure\Quiz.Infrastructure.csproj", "{EFBB79CC-67ED-4188-A169-9A03D733242A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadModel", "ReadModel", "{32FAD4A1-3B3E-4003-AD7A-79FF610D3751}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{9B0B11F4-1897-41F7-B3AD-2B0D13C96D3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineQuizSystem.API", "OnlineQuizSystem.API\OnlineQuizSystem.API.csproj", "{72C21C82-8AD5-453E-BA1F-97477F43ECA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineQuizSystem.API", "OnlineQuizSystem.API\OnlineQuizSystem.API.csproj", "{72C21C82-8AD5-453E-BA1F-97477F43ECA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Core", "Framework.Core\Framework.Core.csproj", "{EA14A796-7BF9-469F-8162-5D855EF3E9E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Domain", "Framework.Domain\Framework.Domain.csproj", "{5F36CE53-B815-4C48-94DF-60E42E1289F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +71,14 @@ Global
 		{72C21C82-8AD5-453E-BA1F-97477F43ECA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72C21C82-8AD5-453E-BA1F-97477F43ECA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72C21C82-8AD5-453E-BA1F-97477F43ECA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA14A796-7BF9-469F-8162-5D855EF3E9E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA14A796-7BF9-469F-8162-5D855EF3E9E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA14A796-7BF9-469F-8162-5D855EF3E9E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA14A796-7BF9-469F-8162-5D855EF3E9E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F36CE53-B815-4C48-94DF-60E42E1289F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F36CE53-B815-4C48-94DF-60E42E1289F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F36CE53-B815-4C48-94DF-60E42E1289F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F36CE53-B815-4C48-94DF-60E42E1289F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +95,8 @@ Global
 		{0E89D72D-D90F-4E21-91F0-700147362DED} = {7F909AF4-8213-45DA-B47F-0A2829F3DA79}
 		{20B0A331-7FD1-44D9-A3E1-FC5F54F8E8D0} = {7F909AF4-8213-45DA-B47F-0A2829F3DA79}
 		{EFBB79CC-67ED-4188-A169-9A03D733242A} = {C78DB740-AD32-4F7F-95C1-461B6F368CA0}
+		{EA14A796-7BF9-469F-8162-5D855EF3E9E9} = {9B0B11F4-1897-41F7-B3AD-2B0D13C96D3B}
+		{5F36CE53-B815-4C48-94DF-60E42E1289F5} = {9B0B11F4-1897-41F7-B3AD-2B0D13C96D3B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {29637727-A9E8-45C9-9BE0-D4777C5D3416}
