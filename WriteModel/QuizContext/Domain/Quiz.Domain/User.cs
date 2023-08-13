@@ -1,17 +1,21 @@
 ﻿using Framework.Core.Domain;
 using Quiz.Domain.Enums;
+using Quiz.Domain.Services;
 
 namespace Quiz.Domain;
 
 public class User : BaseEntity
 {
-    public User(string firstName, string lastName, string email, DateOnly? birthDate, UserRole role)
+    public User(string firstName, string lastName,
+        string email, DateOnly? birthDate,
+        UserRole role)
     {
         SetFirstName(firstName);
         SetLastName(lastName);
         SetEmail(email);
         SetBirthDate(birthDate);
         SetRole(role);
+        IsActive = false;
     }
 
     public string FirstName { get; set; }
@@ -19,6 +23,7 @@ public class User : BaseEntity
     public string Email { get; set; }
     public DateOnly BirthDate { get; set; }
     public UserRole Role { get; set; }
+    public bool IsActive { get; set; }
 
     private void SetFirstName(string firstName)
     {
