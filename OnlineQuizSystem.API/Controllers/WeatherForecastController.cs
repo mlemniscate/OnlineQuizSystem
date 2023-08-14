@@ -1,6 +1,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Quiz.Application.Contracts;
+using Quiz.Data;
 
 namespace OnlineQuizSystem.API.Controllers
 {
@@ -14,19 +15,15 @@ namespace OnlineQuizSystem.API.Controllers
     };
 
         private readonly ILogger<WeatherForecastController> _logger;
-        private readonly IMediator mediator;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger,
-            IMediator mediator)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
-            this.mediator = mediator;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
-            mediator.Send(new CreateUserCommand());
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),

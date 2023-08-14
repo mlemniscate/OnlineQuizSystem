@@ -7,7 +7,7 @@ namespace Quiz.Domain;
 public class User : BaseEntity
 {
     public User(string firstName, string lastName,
-        string email, DateOnly? birthDate,
+        string email, DateTime? birthDate,
         UserRole role)
     {
         SetFirstName(firstName);
@@ -18,10 +18,12 @@ public class User : BaseEntity
         IsActive = false;
     }
 
+    protected User(){}
+
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string Email { get; set; }
-    public DateOnly BirthDate { get; set; }
+    public DateTime BirthDate { get; set; }
     public UserRole Role { get; set; }
     public bool IsActive { get; set; }
 
@@ -49,7 +51,7 @@ public class User : BaseEntity
         Email = email;
     }
     
-    private void SetBirthDate(DateOnly? birthDate)
+    private void SetBirthDate(DateTime? birthDate)
     {
         if (birthDate == null)
             throw new ArgumentNullException(nameof(BirthDate));
