@@ -5,9 +5,9 @@ namespace Quiz.Domain;
 
 public class User : BaseEntity
 {
-    public User(string firstName, string lastName,
-        string email, DateTime? birthDate,
-        UserRole role)
+    public User(string? firstName, string? lastName,
+        string? email, DateTime? birthDate,
+        UserRole? role)
     {
         SetFirstName(firstName);
         SetLastName(lastName);
@@ -26,25 +26,25 @@ public class User : BaseEntity
     public UserRole Role { get; set; }
     public bool IsActive { get; set; }
 
-    private void SetFirstName(string firstName)
+    private void SetFirstName(string? firstName)
     {
-        if (string.IsNullOrEmpty(firstName))
+        if (string.IsNullOrWhiteSpace(firstName))
             throw new ArgumentNullException(nameof(FirstName));
 
         FirstName = firstName;
     }
 
-    private void SetLastName(string lastName)
+    private void SetLastName(string? lastName)
     {
-        if (string.IsNullOrEmpty(lastName))
+        if (string.IsNullOrWhiteSpace(lastName))
             throw new ArgumentNullException(nameof(LastName));
 
         LastName = lastName;
     }
 
-    private void SetEmail(string email)
+    private void SetEmail(string? email)
     {
-        if (string.IsNullOrEmpty(email))
+        if (string.IsNullOrWhiteSpace(email))
             throw new ArgumentNullException(nameof(Email));
 
         Email = email;
@@ -58,8 +58,11 @@ public class User : BaseEntity
         BirthDate = birthDate.Value;
     }
 
-    private void SetRole(UserRole role)
+    private void SetRole(UserRole? role)
     {
+        if (role == null)
+            throw new ArgumentNullException(nameof(Role));
+
         Role = role;
     }
 
