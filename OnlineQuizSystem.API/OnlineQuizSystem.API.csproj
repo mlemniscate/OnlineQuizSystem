@@ -16,9 +16,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Framework\Framework.Identity\Framework.Identity.csproj" />
     <ProjectReference Include="..\WriteModel\QuizContext\Application\Quiz.Application.Contracts\Quiz.Application.Contracts.csproj" />
     <ProjectReference Include="..\WriteModel\QuizContext\Application\Quiz.Application\Quiz.Application.csproj" />
     <ProjectReference Include="..\WriteModel\QuizContext\Quiz.Data\Quiz.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Seed\" />
   </ItemGroup>
 
 </Project>

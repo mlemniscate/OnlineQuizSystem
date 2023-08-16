@@ -1,4 +1,8 @@
+using Framework.Core.Identity;
+using Framework.Identity;
+using Framework.Identity.Configurations;
 using Microsoft.EntityFrameworkCore;
+using OnlineQuizSystem.API.Seed;
 using Quiz.Application;
 using Quiz.Application.Contracts;
 using Quiz.Data;
@@ -25,7 +29,22 @@ var connectionString = builder.Configuration.GetConnectionString("QuizDatabase")
 builder.Services.AddDbContext<QuizDbContext>(
     options => options.UseSqlServer(connectionString));
 
+// Identity
+builder.Services.AddApplicationIdentity(new IdentityConfiguration
+{
+    ValidAudience = builder.Configuration["JWT:ValidAudience"]!,
+    ValidIssuer = builder.Configuration["JWT:ValidAudience"]!,
+    Secret = builder.Configuration["JWT:Secret"]!,
+    IdentityConnectionString = builder.Configuration.GetConnectionString("Identity")!
+});
+
 var app = builder.Build();
+
+// Seed Data
+using var scope = app.Services.CreateScope();
+var identityDbContext = scope.ServiceProvider.GetService<IIdentityService>();
+var seedData = new SeedData(identityDbContext);
+await seedData.Seed();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

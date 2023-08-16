@@ -33,7 +33,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineQuizSystem.API", "OnlineQuizSystem.API\OnlineQuizSystem.API.csproj", "{72C21C82-8AD5-453E-BA1F-97477F43ECA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Data", "Framework\Framework.Data\Framework.Data.csproj", "{06CEE5BB-9F16-49B9-8164-2F9E8D2A6C9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Data", "Framework\Framework.Data\Framework.Data.csproj", "{06CEE5BB-9F16-49B9-8164-2F9E8D2A6C9D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Domain", "Framework\Framework.Domain\Framework.Domain.csproj", "{81F6EC9C-3932-4FFA-B588-DB01976E66A8}"
 EndProject
@@ -42,6 +42,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Application", "Framework\Framework.Application\Framework.Application.csproj", "{F69C8E3E-B1D6-4558-B3D5-B9C43110A0EB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quiz.Data", "WriteModel\QuizContext\Quiz.Data\Quiz.Data.csproj", "{55934DD8-4BA1-4A1E-86CD-A3669182208A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Identity", "Framework\Framework.Identity\Framework.Identity.csproj", "{ECFE2751-9A2E-4925-A155-DE92B69B6276}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +99,10 @@ Global
 		{55934DD8-4BA1-4A1E-86CD-A3669182208A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55934DD8-4BA1-4A1E-86CD-A3669182208A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55934DD8-4BA1-4A1E-86CD-A3669182208A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECFE2751-9A2E-4925-A155-DE92B69B6276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECFE2751-9A2E-4925-A155-DE92B69B6276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECFE2751-9A2E-4925-A155-DE92B69B6276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECFE2751-9A2E-4925-A155-DE92B69B6276}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -118,6 +124,7 @@ Global
 		{9A894C80-41BE-47D1-9460-2623D9A95EE5} = {9B0B11F4-1897-41F7-B3AD-2B0D13C96D3B}
 		{F69C8E3E-B1D6-4558-B3D5-B9C43110A0EB} = {9B0B11F4-1897-41F7-B3AD-2B0D13C96D3B}
 		{55934DD8-4BA1-4A1E-86CD-A3669182208A} = {CBF8DC29-5EA0-470F-A3F3-F10CCAD98CFA}
+		{ECFE2751-9A2E-4925-A155-DE92B69B6276} = {9B0B11F4-1897-41F7-B3AD-2B0D13C96D3B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {29637727-A9E8-45C9-9BE0-D4777C5D3416}
