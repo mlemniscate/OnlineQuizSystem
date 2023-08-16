@@ -16,7 +16,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Framework.Infrastrucutre\Framework.Infrastrucutre.csproj" />
     <ProjectReference Include="..\..\Domain\Quiz.Domain\Quiz.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Rerpositories\" />
   </ItemGroup>
 
 </Project>

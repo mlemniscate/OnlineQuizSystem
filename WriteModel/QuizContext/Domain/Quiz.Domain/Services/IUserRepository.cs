@@ -1,6 +1,8 @@
-﻿namespace Quiz.Domain.Services;
+﻿using Framework.Core.Domain;
 
-public interface IUserRepository
+namespace Quiz.Domain.Services;
+
+public interface IUserRepository : IRepository
 {
-    public Task Create(User user);
+    public void Create(User user);
 }

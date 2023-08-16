@@ -3,7 +3,7 @@ using Quiz.Domain.Enums;
 
 namespace Quiz.Domain;
 
-public class User : BaseEntity
+public class User : BaseEntity, IAggregateRoot
 {
     public User(string? firstName, string? lastName,
         string? email, DateTime? birthDate,
